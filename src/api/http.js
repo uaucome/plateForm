@@ -5,8 +5,8 @@ import { Message } from 'element-ui'
 // Axios.defaults.withCredentials = true
 // Axios.defaults.baseURL = '/api';
 
-// const host = process.env.NODE_ENV === 'development' ? '/api' : 'http://127.0.0.1'; // 根据 process.env.NODE_ENV 的值判断当前是什么环境
-const host = process.env.url;
+const host = process.env.NODE_ENV === 'development' ? '/api' : 'http://127.0.0.1'; // 根据 process.env.NODE_ENV 的值判断当前是什么环境
+// const host = process.env.url;
 const axios = Axios.create({
   baseURL: host
 });
